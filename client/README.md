@@ -1,3 +1,11 @@
+# turotials
+https://dev.to/nburgess/creating-a-react-app-with-react-router-and-an-express-backend-33l3
+https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/
+
+# deploy in aws elastic beanstalk
+https://medium.com/@wlto/how-to-deploy-an-express-application-with-react-front-end-on-aws-elastic-beanstalk-880ff7245008
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

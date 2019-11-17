@@ -1,5 +1,3 @@
-// https://dev.to/nburgess/creating-a-react-app-with-react-router-and-an-express-backend-33l3
-// https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/
 const express = require('express');
 const path = require('path');
 const app = express();
