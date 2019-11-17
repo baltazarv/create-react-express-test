@@ -14,11 +14,11 @@ class App extends React.Component {
 		this.getTestResponse();
 	}
 
-	// Retrieves the list of items from the Express app
 	getTestResponse = () => {
 		fetch('/api/pong')
 			.then(res => res.json())
 			.then(testResponse => this.setState({ testResponse }))
+			.catch(err => console.log('ERR', err));
 	}
 
 	render() {
