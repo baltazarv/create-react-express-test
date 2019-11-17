@@ -11,14 +11,16 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		this.getTestResponse();
-	}
-
-	getTestResponse = () => {
-		fetch('/api/pong')
-			.then(res => res.json())
+		this.getTestResponse()
 			.then(testResponse => this.setState({ testResponse }))
 			.catch(err => console.log('ERR', err));
+	}
+
+	getTestResponse = async () => {
+		const resp = await fetch('/api/ping');
+		const body = await resp.json();
+		if (resp.status !== 200) throw Error(body.message);
+		return body;
 	}
 
 	render() {
